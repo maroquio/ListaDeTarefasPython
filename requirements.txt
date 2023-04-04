@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+sqlalchemy
+aiohttp
+async-exit-stack
+async-generator
+python-multipart
+pydantic
+python-dotenv
+starlette
+httpx

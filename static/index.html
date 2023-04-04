@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <h1>Gerenciador de Tarefas</h1>
+    <form id="tarefa-form">
+        <input type="hidden" id="tarefa-id">
+        <input type="text" id="titulo" placeholder="Título" required>
+        <input type="text" id="descricao" placeholder="Descrição" required>
+        <input type="datetime-local" id="data_hora_inicio" placeholder="Data e hora de início" required>
+        <input type="datetime-local" id="data_hora_fim" placeholder="Data e hora de fim" required>
+        <select id="situacao" required>
+            <option value="" disabled selected>Situação</option>
+            <option value="pendente">Pendente</option>
+            <option value="finalizada">Finalizada</option>
+        </select>
+        <button type="submit">Salvar Tarefa</button>
+    </form>
+    <div id="tarefas"></div>
+    <script src="/static/app.js"></script>
+</body>
+
+</html>
